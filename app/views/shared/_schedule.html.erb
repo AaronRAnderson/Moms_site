@@ -1,0 +1,8 @@
+<div class="card sidebar-card schedule">
+  <h4>Schedule</h4>
+  <ul>
+    <% @days.each do |open| %>
+      <li><%= open %>: <span class="right-align"><%= @time %></span> </li>
+    <% end %>
+  </ul>
+</div>

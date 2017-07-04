@@ -1,0 +1,16 @@
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="container">
+    <div class="nav-wrapper ">
+      <%= link_to (image_tag "logo.svg", height: '50px', class: 'nav-img' ), root_path, id: 'logo-container', class: 'logo'%>
+      <a data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="custom-nav"><%= link_to 'About Us', about_path, class: active?(about_path) %></li>
+        <li class="custom-nav"><%= link_to 'Contact', contact_path, class: active?(contact_path) %></li>
+      </ul>
+      <ul class="side-nav light-blue lighten-1" id="mobile">
+        <li class="custom-nav"><%= link_to 'About Us', about_path %></li>
+        <li class="custom-nav"><%= link_to 'Contact', contact_path%></li>
+      </ul>
+    </div>
+  </div>
+</nav>

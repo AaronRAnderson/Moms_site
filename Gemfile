@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://rubygems.org' # ~> NoMethodError: undefined method `source' for main:Object
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -51,5 +51,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
-gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
+gem 'jquery-turbolinks', '~> 2.1'
+gem 'materialize-sass', '~> 0.98.2'
+
+
+
+# ~> NoMethodError
+# ~> undefined method `source' for main:Object
+# ~>
+# ~> /var/folders/dy/49s17_5j3mv6533yqqyb2cf80000gn/T/seeing_is_believing_temp_dir20170621-20555-1t9lhwo/program.rb:1:in `<main>'

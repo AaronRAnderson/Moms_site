@@ -1,0 +1,8 @@
+<div class="card sidebar-card event-sidebar">
+  <h4>Events</h4>
+  <ul>
+    <% @events.each do |event| %>
+      <li><%= link_to event.title, event_path(event) %></li>
+    <% end %>
+  </ul>
+</div>

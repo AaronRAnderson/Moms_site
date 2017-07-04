@@ -11,8 +11,13 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
-//= require bootstrap
+//= require jquery.turbolinks
 //= require rails-ujs
-//= require turbolinks
+//= require materialize
+//= require materialize-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+  $(".button-collapse").sideNav();
+  $('.collapsible').collapsible();
+});
